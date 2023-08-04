@@ -1,0 +1,39 @@
+{
+    "name": "yii1tech/tagged-cache",
+    "description": "Provides support for tag aware cache for Yii1 application",
+    "keywords": ["yii1", "cache", "tag", "tags", "tagged", "tag-aware"],
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yii1tech/tagged-cache/issues",
+        "wiki": "https://github.com/yii1tech/tagged-cache/wiki",
+        "source": "https://github.com/yii1tech/tagged-cache"
+    },
+    "authors": [
+        {
+            "name": "Paul Klimov",
+            "email": "klimov.paul@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "yiisoft/yii": "~1.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0 || ^7.0 || ^8.0 || ^9.3 || ^10.0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii1tech\\cache\\tagged\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "yii1tech\\cache\\tagged\\test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
