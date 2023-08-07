@@ -11,6 +11,20 @@ use CCache;
  *
  * This class can be used while writing unit tests.
  *
+ * Application configuration example:
+ *
+ * ```php
+ * return [
+ *     'components' => [
+ *         'cache' => [
+ *             'class' => \yii1tech\cache\tagged\ArrayCache::class,
+ *         ],
+ *         // ...
+ *     ],
+ *     // ...
+ * ];
+ * ```
+ *
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @since 1.0
  */
