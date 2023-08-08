@@ -140,7 +140,7 @@ SQL;
     {
         $whereParts = [];
         foreach ($tagParams as $name => $value) {
-            $whereParts[] = "JSON_CONTAINS(tags, {$name}, '$')";
+            $whereParts[] = "JSON_CONTAINS(`tags`, CONCAT('\"', {$name}, '\"'), '$')";
         }
 
         return '(' . implode(' OR ', $whereParts) . ')';

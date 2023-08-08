@@ -15,5 +15,10 @@
 	<php>
 		<!--<server name="MEMCACHE_HOST" value="127.0.0.1"/>-->
 		<!--<server name="MEMCACHE_PORT" value="11211"/>-->
+		<!--<server name="MYSQL_HOST" value="127.0.0.1"/>-->
+		<!--<server name="MYSQL_PORT" value="3306"/>-->
+		<!--<server name="MYSQL_DATABASE" value="yiitest"/>-->
+		<!--<server name="MYSQL_USERNAME" value="root"/>-->
+		<!--<server name="MYSQL_PASSWORD" value="root"/>-->
 	</php>
 </phpunit>
