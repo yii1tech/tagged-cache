@@ -21,7 +21,9 @@ use PDO;
  *     'components' => [
  *         'db' => [
  *             'class' => \CDbConnection::class,
- *             'connectionString' => 'sqlite:path/to/dbfile',
+ *             'connectionString' => 'mysql:host=127.0.0.1;port=3306;dbname=yiiexample',
+ *             'username' => 'default',
+ *             'password' => 'secret',
  *         ],
  *         'cache' => [
  *             'class' => \yii1tech\cache\tagged\DbCache::class,

@@ -8,9 +8,12 @@ use Memcached;
 /**
  * MemCache is tag aware version of standard {@see \CMemCache}.
  *
- * It saves tagged cache item keys into separated entities inside MemCache.
+ * It saves tagged cache item keys into additional separated entities inside MemCache.
  *
  * > Note: unlike {@see \CMemCache} this class does not support "memcache" PHP extension and requires usage of "memcached" instead.
+ *
+ * > Warning: this solution may be unreliable depending on actual MemCache server configuration, since MemCache may delete random keys
+ *   without prompt to optimize memory usage, the tags information may become lost, while keys related to it still remain.
  *
  * Application configuration example:
  *
