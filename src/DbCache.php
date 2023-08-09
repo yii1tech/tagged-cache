@@ -156,10 +156,10 @@ SQL;
     {
         $whereParts = [];
         foreach ($tagParams as $name => $value) {
-            $whereParts[] = "(tags)::jsonb ? {$name}";
+            $whereParts[] = "tag::text = CONCAT('\"', CAST({$name} AS VARCHAR), '\"'))";
         }
 
-        return '(' . implode(' OR ', $whereParts) . ')';
+        return 'EXISTS (SELECT 1 FROM json_array_elements(tags) AS tag WHERE (' . implode(' OR ', $whereParts) . ')';
     }
 
     /**
@@ -176,7 +176,6 @@ SQL;
             $blob = 'LONGBLOB';
         } elseif($driver==='pgsql') {
             $blob = 'BYTEA';
-            $json = 'JSONB';
         }
 
         $sql = <<<"SQL"

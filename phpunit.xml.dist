@@ -20,5 +20,10 @@
 		<!--<server name="MYSQL_DATABASE" value="yiitest"/>-->
 		<!--<server name="MYSQL_USERNAME" value="root"/>-->
 		<!--<server name="MYSQL_PASSWORD" value="root"/>-->
+		<!--<server name="POSTGRES_HOST" value="127.0.0.1"/>-->
+		<!--<server name="POSTGRES_PORT" value="5432"/>-->
+		<!--<server name="POSTGRES_DATABASE" value="yiitest"/>-->
+		<!--<server name="POSTGRES_USERNAME" value="yiitest"/>-->
+		<!--<server name="POSTGRES_PASSWORD" value="secret"/>-->
 	</php>
 </phpunit>
